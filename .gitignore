@@ -1,0 +1,16 @@
+# Dependency and build output
+**/node_modules/
+**/bin/
+**/.task/
+**/__pycache__/
+*.syso
+*.log
+.DS_Store
+Thumbs.db
+
+# Local configuration and generated validation reports
+.env
+.env.*
+!.env.example
+**/call-flow-validation.json
+**/frontend-validation.json

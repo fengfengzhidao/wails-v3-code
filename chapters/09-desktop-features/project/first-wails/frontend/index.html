@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 Wails 便笺</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="app">
+        <h1>我的 Wails 便笺</h1>
+        <p class="description">练习前后端调用，把一段文字保存到本机。</p>
+
+        <section class="card">
+            <h2>先打个招呼</h2>
+            <form id="greet-form" class="row">
+                <label for="name">姓名</label>
+                <input id="name" autocomplete="name" placeholder="请输入姓名">
+                <button id="greet-button" type="submit">问候</button>
+            </form>
+            <p id="greeting" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+            <h2><label for="note">今天想记下什么</label></h2>
+            <p id="clock" role="status"></p>
+            <textarea id="note" rows="10" disabled placeholder="正在读取便笺"></textarea>
+            <div class="toolbar">
+                <button id="save-button" type="button" disabled>保存便笺</button>
+                <span id="note-status" role="status" aria-live="polite">正在加载</span>
+            </div>
+            <p class="path">保存位置 <code id="file-path"></code></p>
+        </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

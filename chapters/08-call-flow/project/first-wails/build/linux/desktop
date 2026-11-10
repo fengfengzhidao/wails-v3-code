@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=My Product
+Comment=A first-wails application
+# The Exec line includes %u to pass the URL to the application
+Exec=/usr/local/bin/first-wails.exe %u
+Terminal=false
+Type=Application
+Icon=first-wails.exe
+Categories=Utility;
+StartupWMClass=first-wails.exe
+
+ 
