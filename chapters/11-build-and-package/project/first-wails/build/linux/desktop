@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Wails Chapter 11 Note
+Comment=Wails v3 chapter 11 note example
+# The Exec line includes %u to pass the URL to the application
+Exec=/usr/local/bin/first-wails %u
+Terminal=false
+Type=Application
+Icon=first-wails
+Categories=Utility;
+StartupWMClass=first-wails
+
+ 

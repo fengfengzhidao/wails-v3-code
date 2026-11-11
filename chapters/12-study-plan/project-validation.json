@@ -1,0 +1,14 @@
+{
+  "production_build": "passed",
+  "note_model_go_run": "passed",
+  "frontend_source_checks": 14,
+  "native_validation": "passed",
+  "native_cases": [
+    "Unicode input count 2",
+    "delete to count 1",
+    "Ctrl+S saves UTF-8 text",
+    "restart restores text and initial count 10"
+  ],
+  "macos_command_s": "source_level_check_only",
+  "advanced_extensions": "import/export and multi-note persistence are exercise goals; standalone JSON model supplied"
+}

@@ -1,0 +1,15 @@
+{
+	"fixed": {
+		"file_version": "1.0.0"
+	},
+	"info": {
+		"0409": {
+			"ProductVersion": "1.0.0",
+			"CompanyName": "WailsLearning",
+			"FileDescription": "Wails v3 chapter 11 note example",
+			"LegalCopyright": "2026 WailsLearning",
+			"ProductName": "Wails Chapter 11 Note",
+			"Comments": "Learning sample"
+		}
+	}
+}

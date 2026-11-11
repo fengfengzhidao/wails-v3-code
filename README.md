@@ -25,8 +25,10 @@
 | 第 8 章 | [调用流程](chapters/08-call-flow) | 生成绑定、源码追踪与 JSON 模型 |
 | 第 9 章 | [桌面扩展](chapters/09-desktop-features) | 事件、窗口、文件选择与生命周期 |
 | 第 10 章 | [调试排错](chapters/10-debugging) | 健康工程与故障、修复对照 |
+| 第 11 章 | [构建与打包](chapters/11-build-and-package) | 正式构建、产品信息与 NSIS 安装器 |
+| 第 12 章 | [学习计划与练习](chapters/12-study-plan) | 两周安排、字符计数、保存快捷键与独立模型 |
 
-第 1 章介绍概念，第 11 章在已有工程中练习构建，第 12 章安排复习与扩展。
+第 1 章介绍概念。第 11 章结合已有工程练习构建，第 12 章提供计数与保存快捷键的参考实现。
 
 已安装第 2 章的工具后，可在仓库根目录进入某章工程并启动。
 
@@ -1320,6 +1322,8 @@ wails3 dev -port 9246
 
 ## 第 11 章 构建与打包
 
+配套材料包含本章参考工程和操作步骤。[第 11 章练习指南](chapters/11-build-and-package/练习指南.md) · [查看本章代码](chapters/11-build-and-package)
+
 ### 11.1 开发模式和正式构建
 
 | 模式 | 命令 | 主要用途 |
@@ -1360,6 +1364,12 @@ bin/first-wails.exe
 wails3 package GOOS=windows
 ```
 
+配套工程的 Windows Taskfile 还支持当前用户安装范围。本章参考工程使用以下命令完成过打包。
+
+```powershell
+wails3 package GOOS=windows INSTALL_SCOPE=user
+```
+
 安装器通常生成到以下路径，实际名称以构建任务输出为准。
 
 ```text
@@ -1381,6 +1391,8 @@ Windows 用户运行应用时需要 WebView2 Runtime。默认安装包流程包�
 - 在目标机器上检查 WebView2 和安装包运行情况。
 
 ## 第 12 章 两周学习计划与练习
+
+配套材料包含本章参考工程和操作步骤。[第 12 章练习指南](chapters/12-study-plan/练习指南.md) · [查看本章代码](chapters/12-study-plan)
 
 下面按每天约 45～90 分钟设计。卡在某一步时，按实际情况延长练习时间。
 
